@@ -46,8 +46,7 @@ button{
     text-align: center;
     width: 800px;
     height: 230px;
-   /* border: 5px solid red;*/
-    font-size: 60px;
+    font-size: 50px;
     color: white;
  
 }
@@ -137,6 +136,7 @@ padding-left: 0px;
     border-radius: 4px;
     padding: 8px;
     margin: 16px;
+    font-size: 15px;
 }
 
 .footer{
@@ -155,7 +155,7 @@ padding-left: 0px;
     flex: 0 1 600px;
     background: rgb(248, 235, 197);
     color: rgb(56, 56, 56);
-    font-size: 15px;
+    font-size: 13px;
     height: 35px;
     border: 2px solid rgb(221, 162, 86);
     padding: 3px;
