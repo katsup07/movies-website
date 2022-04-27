@@ -179,10 +179,10 @@ ul.genre-links {
     justify-content: center;
     align-items: center;
     /* Hide this modal until we need it */
+    /* Still there but can't see it. It will prevent interaction with the buttons */
     opacity: 0;
-    /* Still there but can't see it. It will prevent interaction with the buttons on the cards */
+    /*However, pointer-events tells the browser to ignore any events so it will ignore the outer modal so user can click cards  */
     pointer-events: none;
-    /*Tells the browser to ignore any events and will ignore the opacity above so can click cards  */
     transition: opacity 0.5s;
 }
 
