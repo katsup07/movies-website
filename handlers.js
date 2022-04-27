@@ -1,6 +1,8 @@
-import { modalInner, modalOuter } from './elements.js';
-import closeModal from './library.js';
+import { modalInner, modalOuter, reviewEls } from './elements.js';
+import { closeModal, shuffle } from './library.js';
 import formHTML from './formHTML.js';
+import reviews from './reviews.js';
+
 /* eslint-disable max-len */
 export function handleCardButtonClick(event) {
   const button = event.currentTarget;
@@ -26,3 +28,14 @@ export function handleSignUpButtonClick(event) {
   // Show the modal
   modalOuter.classList.add('open');
 }
+
+export function showMoreReviews() {
+  const reviewsShuffle = shuffle(reviews);
+  reviewEls.forEach((reviewEl, i) => {
+    reviewEl.textContent = reviewsShuffle[i];
+  });
+}
+
+shuffle(['a', 'b', 'c', 'd']);
+shuffle(['a', 'b', 'c', 'd']);
+shuffle(['a', 'b', 'c', 'd']);
