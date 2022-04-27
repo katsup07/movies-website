@@ -1,57 +1,54 @@
-body{
+body {
     display: flex;
-    flex-shrink: 1;
     flex-direction: column;
-    font-family: Georgia, 'Times New Roman', Times, serif,  Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen;
+    font-family: Georgia, 'Times New Roman', Times, serif, Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen;
     margin: 0px;
     background-image: url('');
-
-    
 }
 
-
-
-.header{
+.header {
     display: flex;
     justify-content: space-between;
-    height: 25vh;
+    min-height: 35vh;
     background: rgb(150, 102, 179);
     background-image: url('https://cdn.pixabay.com/photo/2017/11/24/10/43/ticket-2974645_960_720.jpg');
-   
-    
-    
 }
 
-img{
+img {
     height: 90%;
     width: 90%;
     display: flex;
-    flex: 0  1 auto;
-   
+    flex: 0 1 auto;
 }
 
-button{
+button {
     display: flex;
-    flex-shrink: 1;
-    padding: 10px;
+    height: 2em;
     font-size: 20px;
-    background: white;
-    
+    align-items: center;
+    color: rgb(56, 56, 56)
 }
-.site-intro{
+
+.site-intro-container {
     display: flex;
+    align-items: center;
+
+}
+
+.site-intro {
+    display: flex;
+    align-items: flex-end;
     flex-shrink: 1;
-  
-    align-items: flex-start;
     text-align: center;
-    width: 800px;
-    height: 230px;
     font-size: 60px;
     color: white;
- 
+    background: rgba(0, 0, 0, 0.368);
+    border: 0.1px solid rgba(190, 64, 26, 0.36);
+    border-radius: 10px;
+    padding: 10px;
 }
 
-.logo{
+.logo {
     display: flex;
     flex-shrink: 1;
     flex-direction: column;
@@ -64,110 +61,171 @@ button{
     color: rgb(145, 24, 24);
 }
 
-a{
-    
+.genre-links a {
     text-decoration: none;
     color: rgb(253, 246, 144);
 }
-ul.right-links{
-display: flex;
-align-items: flex-end;
-font-size: 30px;
-font-weight: 900;
-padding-right: 10px;
-list-style-type: none;
-gap: 20px;
+
+ul.genre-links {
+    display: flex;
+    align-items: flex-end;
+    font-size: 30px;
+    font-weight: 900;
+    padding-right: 10px;
+    list-style-type: none;
+    gap: 20px;
 }
 
-.info{
+.info-cards-container {
     display: flex;
-    height: 45vh;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 50vh;
     gap: 60px;
     background: lightcoral;
     padding-bottom: 20px;
-    
- 
-    
-}
-.movie-images-container{
-    display: flex;
-    gap: 60px;
-    width: 1550px;
-    justify-content: space-around;
-    
-    
-
-    
 }
 
-.movie-images-container li{
+.info-cards-container img {
+    border-radius: 12px;
+    min-width: 250px;
+    min-height: 250px;
+    border: 0.5px solid rgb(125, 123, 123);
+}
+
+.info-card {
     display: flex;
-    box-shadow: 10px 20px 2px 10px rgba(0, 0, 0, 0.281);
-    border-radius: 4px;
-    list-style-type: none;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: rgb(0, 0, 0);
+    gap: 60px;
+    padding: 0.5em;
+    margin: 0.5em;
+    box-shadow: 10px 15px 2px 10px rgba(0, 0, 0, 0.281);
+    background-color: rgb(0, 0, 0);
+    border-radius: 12px;
 }
 
-ul{
-padding-left: 0px;
-}
 
-.feedback{
+.reviews-container {
     display: flex;
     flex-wrap: wrap;
-    height: 30vh;
+    min-height: 30vh;
     background: cornflowerblue;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-   
+
 }
-.card{
+
+.reviews-title {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    background: palegreen;
+    box-shadow: 6px 6px 2px 3px rgba(0, 0, 0, 0.281);
+}
+
+.reviews-title h3 {
+    padding: 0;
+    margin: 0;
+}
+
+.review {
     display: flex;
-    
-    flex: 0 1 auto;
     gap: 10px;
     width: 300px;
     height: 80px;
     background: white;
-    box-shadow: 12px 24px 2px 10px rgba(0, 0, 0, 0.281);
+    box-shadow: 10px 15px 2px 10px rgba(0, 0, 0, 0.281);
     border-radius: 4px;
     padding: 8px;
     margin: 16px;
     font-size: 16px;
 }
 
-.footer{
-
+.footer {
     height: 5vh;
-    background: rgba(0, 0, 0, 0.856);
+    background: rgb(34, 32, 32);
     display: flex;
     align-items: space-around;
     justify-content: center;
-    gap: 20px;
     align-items: center;
+    gap: 20px;
+    padding: 0.3em;
 }
 
-.footer-message{
+.footer-message {
     display: flex;
     flex: 0 1 600px;
     background: rgb(248, 235, 197);
     color: rgb(56, 56, 56);
     font-size: 13px;
     height: 35px;
-    border: 2px solid rgb(221, 162, 86);
+    border: 1px solid rgba(221, 163, 86, 0.652);
     padding: 3px;
-    
+
 }
 
-.donate-button{
-    display: flex;
-    height: 2em;
-    font-size: 15px;
+.modal-outer {
+    display: grid;
+    background: hsla(338, 51%, 47%, 0.7);
+    /* hue, saturation, lightness, and alpha(0 is transparent and 1 is opaque).. similarly with rgba-red, green, blue, alpha. */
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    justify-content: center;
     align-items: center;
-    color: rgb(56, 56, 56);
-    
-    
-    }
+    /* Hide this modal until we need it */
+    opacity: 0;
+    /* Still there but can't see it. It will prevent interaction with the buttons on the cards */
+    pointer-events: none;
+    /*Tells the browser to ignore any events and will ignore the opacity above so can click cards  */
+    transition: opacity 0.5s;
+}
+
+.modal-outer img {
+    width: 100%;
+}
+
+/* Show this modal when we need it */
+.modal-outer.open {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.modal-inner {
+    max-width: 600px;
+    min-width: 400px;
+    padding: 1.5rem;
+    border-radius: 5px;
+    border: 1px solid grey;
+    min-height: 200px;
+    background: white;
+    transform: translateY(-200%);
+    transition: transform 2s;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.438);
+}
+
+.modal-outer.open .modal-inner {
+    transform: translateY(0);
+}
+
+.sign-up-container label,
+.sign-up-container input {
+    display: flex;
+    margin: 10px;
+}
+
+.sign-up-container p,
+.sign-up-container h1 {
+    margin: 10px;
+}
+
+.clearfix {
+    display: flex;
+    gap: 10px;
+    margin: 10px;
+}
