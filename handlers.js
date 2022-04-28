@@ -35,7 +35,3 @@ export function showMoreReviews() {
     reviewEl.textContent = reviewsShuffle[i];
   });
 }
-
-shuffle(['a', 'b', 'c', 'd']);
-shuffle(['a', 'b', 'c', 'd']);
-shuffle(['a', 'b', 'c', 'd']);

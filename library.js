@@ -10,3 +10,4 @@ export function shuffle(arr) {
   arr2 = [...arr2, ...cutArr];
   return arr2;
 }
+

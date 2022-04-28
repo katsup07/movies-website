@@ -15,8 +15,18 @@ const reviews = [
 -Jean Luc`,
   `"My kids never bother me anymore. Thank-you Metflix. I feel like I've gotten my life back thanks to you!"
 -Best Father in the World`,
-`"It's okay. I've could make a better movie site. 6/10"
--Bad Ass`
+  `"It's alright... I could make a better movie site. 6/10"
+-BB`,
+  `"Wow! Just wow!"
+-Dingo246`,
+  `"..."
+-Speechless in Seattle`,
+  `"Metflix is cool, man. I like it. My dog likes it too!"
+-DJ Danny`,
+  `"Arrrrr it be a mighty fine site, mateys! Almost as good as treasure, I dare say!"
+  -Captain J`,
+  `"Thisss sssssite is ssssso good! Thanksssss"
+  -Lil_Snake723`,
 ];
 
 export default reviews;
